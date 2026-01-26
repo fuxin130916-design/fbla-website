@@ -44,6 +44,7 @@ body {
 
 /* Header */
 header {
+  margin-left: 10px;
   margin-bottom: 30px;
   padding-bottom: 15px;
   border-bottom: 3px solid #003366;
