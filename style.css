@@ -37,9 +37,10 @@ body {
 /* Main content area */
 .content {
   flex: 1;
-  padding: 40px;
+  padding: 40px 60px;
   max-width: 1000px;
 }
+
 
 /* Header */
 header {
