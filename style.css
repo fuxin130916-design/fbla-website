@@ -1,3 +1,13 @@
+/* =====================
+   IMPORT GOOGLE FONTS
+===================== */
+/* Add this in your HTML <head>:
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+*/
+
+/* =====================
+   GLOBAL
+===================== */
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -5,10 +15,9 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  /* Sky gradient + subtle paper texture */
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(120deg, #f0f4ff, #e6f0ff);
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* subtle museum wall texture */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
   color: #222;
   display: flex;
   min-height: 100vh;
@@ -24,10 +33,12 @@ body {
   padding: 40px 25px;
   box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
   position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .sidebar h2 {
-  font-size: 1.4em;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em;
   margin-bottom: 50px;
   letter-spacing: 1px;
   color: #ffcc00;
@@ -42,6 +53,8 @@ body {
   padding: 8px 6px;
   border-radius: 6px;
   position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .sidebar a::before {
@@ -87,21 +100,22 @@ h2, h3, h4 {
   position: relative;
   z-index: 1;
   color: #0b2c4d;
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-family: 'Merriweather', serif;
+  font-size: 1.8em;
   border-left: 6px solid #ffcc00;
 }
 h2::before {
-  content: '✈'; /* little plane for theme */
+  content: '✈';
   margin-right: 6px;
   color: #ffcc00;
 }
 
 h3 {
-  font-size: 1.35em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
   border-left: 4px solid #ff9900;
 }
 h3::before {
@@ -110,7 +124,8 @@ h3::before {
 }
 
 h4 {
-  font-size: 1.15em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
   border-left: 3px solid #ff7700;
 }
 
@@ -125,13 +140,15 @@ main section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  background-image: url('https://www.transparenttextures.com/patterns/clouds.png'); /* subtle cloud/sky motif */
+  background-image: url('https://www.transparenttextures.com/patterns/clouds.png');
   background-size: cover;
   background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 main section::after {
-  content: '✈'; /* tiny plane in corner */
+  content: '✈';
   position: absolute;
   top: 10px;
   right: 15px;
@@ -154,6 +171,9 @@ main section::after {
   overflow: hidden;
   border-left: 6px solid #ffcc00;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info-box:hover {
@@ -171,6 +191,28 @@ main section::after {
   z-index: 0;
 }
 
+/* Flex container for image + text in info-box */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.flex-row img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.flex-row div {
+  flex: 2 1 300px;
+}
+
+/* Info-box lists */
 .info-box ul {
   padding-left: 24px;
 }
@@ -185,24 +227,6 @@ main section::after {
   content: '🛩️';
   margin-right: 8px;
   color: #ffcc00;
-}
-
-/* =====================
-   IMAGE
-===================== */
-.map-image {
-  width: 50%;
-  max-width: 400px;
-  display: block;
-  margin: 25px 0;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.map-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
 /* =====================
@@ -226,6 +250,25 @@ main section::after {
 }
 
 /* =====================
+   IMAGE
+===================== */
+.map-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+/* =====================
    FOOTER
 ===================== */
 footer {
@@ -235,4 +278,15 @@ footer {
   font-size: 0.9em;
   color: #666;
   text-align: center;
+}
+
+/* =====================
+   RESPONSIVE ADJUSTMENTS
+===================== */
+@media (max-width: 900px) {
+  main section::after, .info-box::after {
+    font-size: 2.5em;
+    top: -15px;
+    right: -15px;
+  }
 }
