@@ -78,22 +78,32 @@ body {
 /* =====================
    HEADER
 ===================== */
-header {
-  margin-bottom: 55px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.8em;
-  letter-spacing: 1px;
+/* =====================
+   HEADERS
+===================== */
+h2, h3, h4 {
+  margin-bottom: 20px;
+  padding-left: 16px;
+  position: relative;
+  z-index: 1;
   color: #0b2c4d;
 }
 
-header p {
-  margin-top: 14px;
-  color: #555;
-  font-size: 1.1em;
+h2 {
+  font-size: 1.6em;
+  border-left: 6px solid #ffcc00;
 }
+
+h3 {
+  font-size: 1.35em;
+  border-left: 4px solid #ff9900;
+}
+
+h4 {
+  font-size: 1.15em;
+  border-left: 3px solid #ff7700;
+}
+
 
 /* =====================
    SECTIONS
