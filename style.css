@@ -102,3 +102,11 @@ footer {
   color: #666;
   text-align: center;
 }
+
+.map-image {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
