@@ -1,13 +1,3 @@
-/* =====================
-   IMPORT GOOGLE FONTS
-===================== */
-/* Add this in your HTML <head>:
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-*/
-
-/* =====================
-   GLOBAL
-===================== */
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -23,9 +13,6 @@ body {
   min-height: 100vh;
 }
 
-/* =====================
-   SIDEBAR
-===================== */
 .sidebar {
   width: 250px;
   background: linear-gradient(180deg, #0b2c4d, #1a4b7a);
@@ -80,9 +67,6 @@ body {
   padding-left: 12px;
 }
 
-/* =====================
-   MAIN CONTENT
-===================== */
 .content {
   flex: 1;
   display: flex;
@@ -91,9 +75,6 @@ body {
   max-width: 1200px;
 }
 
-/* =====================
-   HEADERS
-===================== */
 h2, h3, h4 {
   margin-bottom: 20px;
   padding-left: 20px;
@@ -129,9 +110,6 @@ h4 {
   border-left: 3px solid #ff7700;
 }
 
-/* =====================
-   SECTIONS
-===================== */
 main section {
   margin-bottom: 70px;
   background-color: #ffffff;
@@ -229,29 +207,12 @@ main section::after {
   color: #ffcc00;
 }
 
-/* =====================
-   ADMISSION LIST
-===================== */
-.admission-list {
-  margin-top: 20px;
-  line-height: 2;
-}
-
-.admission-list li {
-  font-weight: 600;
-  color: #0b2c4d;
-  position: relative;
-}
-
 .admission-list li::before {
   content: '•';
   color: #ffcc00;
   margin-right: 8px;
 }
 
-/* =====================
-   IMAGE
-===================== */
 .map-image {
   width: 100%;
   max-width: 400px;
@@ -268,9 +229,6 @@ main section::after {
   box-shadow: 0 12px 28px rgba(0,0,0,0.25);
 }
 
-/* =====================
-   FOOTER
-===================== */
 footer {
   margin-top: auto;
   padding-top: 35px;
@@ -280,9 +238,6 @@ footer {
   text-align: center;
 }
 
-/* =====================
-   RESPONSIVE ADJUSTMENTS
-===================== */
 @media (max-width: 900px) {
   main section::after, .info-box::after {
     font-size: 2.5em;
