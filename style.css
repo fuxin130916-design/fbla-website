@@ -110,3 +110,8 @@ footer {
   margin: 20px 0 20px 0; /* no auto = left aligned */
   border-radius: 8px;
 }
+
+.admission-list {
+  margin-top: 10px;
+  line-height: 1.8;
+}
