@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(120deg, #f0f4ff, #e6f0ff);
+  background: linear-gradient(120deg, #f0f4ff, #e6f0ff); /* sky/museum vibe */
   color: #222;
   display: flex;
   min-height: 100vh;
@@ -76,9 +76,6 @@ body {
 }
 
 /* =====================
-   HEADER
-===================== */
-/* =====================
    HEADERS
 ===================== */
 h2, h3, h4 {
@@ -104,93 +101,7 @@ h4 {
   border-left: 3px solid #ff7700;
 }
 
-
 /* =====================
    SECTIONS
 ===================== */
-main section {
-  margin-bottom: 70px;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-main section::after {
-  content: '';
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 204, 0, 0.1);
-  border-radius: 50%;
-  z-index: 0;
-}
-
-h2 {
-  font-size: 1.6em;
-  margin-bottom: 20px;
-  border-left: 6px solid #ffcc00;
-  padding-left: 16px;
-  position: relative;
-  z-index: 1;
-}
-
-p {
-  line-height: 1.9;
-  margin-bottom: 18px;
-  color: #333;
-}
-
-ul {
-  padding-left: 24px;
-}
-
-li {
-  margin-bottom: 14px;
-}
-
-/* =====================
-   HIGHLIGHT SECTION
-===================== */
-.highlight {
-  background: linear-gradient(145deg, #eef4fb, #dfe9f7);
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  font-weight: 500;
-}
-
-/* =====================
-   IMAGE
-===================== */
-.map-image {
-  width: 50%;
-  max-width: 400px;
-  display: block;
-  margin: 25px 0;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.map-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
-
-/* =====================
-   ADMISSION LIST
-===================== */
-.admission-list {
-  margin-top: 20px;
-  line-height: 2;
-}
-
-.admission-list li {
-  font-weight: 600;
-  color: #0b2c4d;
-  position: relativ
+main sec
