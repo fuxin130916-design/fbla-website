@@ -107,6 +107,6 @@ footer {
   width: 50%;
   max-width: 400px;
   display: block;
-  margin: 20px auto;
+  margin: 20px 0 20px 0; /* no auto = left aligned */
   border-radius: 8px;
 }
