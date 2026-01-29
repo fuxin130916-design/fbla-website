@@ -6,7 +6,9 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(120deg, #f0f4ff, #e6f0ff); /* sky/museum vibe */
+  /* Sky gradient + subtle paper texture */
+  background: linear-gradient(120deg, #f0f4ff, #e6f0ff);
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* subtle museum wall texture */
   color: #222;
   display: flex;
   min-height: 100vh;
@@ -21,6 +23,7 @@ body {
   color: white;
   padding: 40px 25px;
   box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .sidebar h2 {
@@ -37,71 +40,4 @@ body {
   margin-bottom: 18px;
   font-size: 1em;
   padding: 8px 6px;
-  border-radius: 6px;
-  position: relative;
-}
-
-.sidebar a::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: #ffcc00;
-  border-radius: 4px;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.3s ease;
-}
-
-.sidebar a:hover::before {
-  transform: scaleY(1);
-}
-
-.sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  padding-left: 12px;
-}
-
-/* =====================
-   MAIN CONTENT
-===================== */
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 90px;
-  max-width: 1200px;
-}
-
-/* =====================
-   HEADERS
-===================== */
-h2, h3, h4 {
-  margin-bottom: 20px;
-  padding-left: 16px;
-  position: relative;
-  z-index: 1;
-  color: #0b2c4d;
-}
-
-h2 {
-  font-size: 1.6em;
-  border-left: 6px solid #ffcc00;
-}
-
-h3 {
-  font-size: 1.35em;
-  border-left: 4px solid #ff9900;
-}
-
-h4 {
-  font-size: 1.15em;
-  border-left: 3px solid #ff7700;
-}
-
-/* =====================
-   SECTIONS
-===================== */
-main sec
+  bor
