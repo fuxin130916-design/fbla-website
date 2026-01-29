@@ -40,4 +40,199 @@ body {
   margin-bottom: 18px;
   font-size: 1em;
   padding: 8px 6px;
-  bor
+  border-radius: 6px;
+  position: relative;
+}
+
+.sidebar a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #ffcc00;
+  border-radius: 4px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.sidebar a:hover::before {
+  transform: scaleY(1);
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding-left: 12px;
+}
+
+/* =====================
+   MAIN CONTENT
+===================== */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 90px;
+  max-width: 1200px;
+}
+
+/* =====================
+   HEADERS
+===================== */
+h2, h3, h4 {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+  color: #0b2c4d;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.6em;
+  border-left: 6px solid #ffcc00;
+}
+h2::before {
+  content: '✈'; /* little plane for theme */
+  margin-right: 6px;
+  color: #ffcc00;
+}
+
+h3 {
+  font-size: 1.35em;
+  border-left: 4px solid #ff9900;
+}
+h3::before {
+  content: '🛩️';
+  margin-right: 6px;
+}
+
+h4 {
+  font-size: 1.15em;
+  border-left: 3px solid #ff7700;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+main section {
+  margin-bottom: 70px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background-image: url('https://www.transparenttextures.com/patterns/clouds.png'); /* subtle cloud/sky motif */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main section::after {
+  content: '✈'; /* tiny plane in corner */
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 3em;
+  color: rgba(255, 204, 0, 0.15);
+  transform: rotate(-20deg);
+  z-index: 0;
+}
+
+/* =====================
+   GENERAL INFO BOXES
+===================== */
+.info-box {
+  background: linear-gradient(145deg, #f0f4f8, #e0ebf9);
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-left: 6px solid #ffcc00;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.info-box::after {
+  content: '✈';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 4em;
+  color: rgba(255, 204, 0, 0.08);
+  z-index: 0;
+}
+
+.info-box ul {
+  padding-left: 24px;
+}
+
+.info-box li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #0b2c4d;
+}
+
+.info-box li::before {
+  content: '🛩️';
+  margin-right: 8px;
+  color: #ffcc00;
+}
+
+/* =====================
+   IMAGE
+===================== */
+.map-image {
+  width: 50%;
+  max-width: 400px;
+  display: block;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* =====================
+   ADMISSION LIST
+===================== */
+.admission-list {
+  margin-top: 20px;
+  line-height: 2;
+}
+
+.admission-list li {
+  font-weight: 600;
+  color: #0b2c4d;
+  position: relative;
+}
+
+.admission-list li::before {
+  content: '•';
+  color: #ffcc00;
+  margin-right: 8px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  margin-top: auto;
+  padding-top: 35px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}
