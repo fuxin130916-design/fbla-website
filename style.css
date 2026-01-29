@@ -104,8 +104,8 @@ footer {
 }
 
 .map-image {
-  width: 100%;
-  max-width: 350px;
+  width: 50%;
+  max-width: 400px;
   display: block;
   margin: 20px auto;
   border-radius: 8px;
