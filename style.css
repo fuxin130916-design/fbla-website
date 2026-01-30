@@ -1,6 +1,4 @@
-/* =====================
-   GLOBAL
-===================== */
+
 * {
   box-sizing: border-box;
 }
@@ -15,9 +13,7 @@ body {
   min-height: 100vh;
 }
 
-/* =====================
-   SIDEBAR
-===================== */
+
 .sidebar {
   width: 250px;
   background: linear-gradient(180deg, #0b2c4d, #1a4b7a);
@@ -70,9 +66,7 @@ body {
   padding-left: 12px;
 }
 
-/* =====================
-   CONTENT
-===================== */
+
 .content {
   flex: 1;
   display: flex;
@@ -81,9 +75,7 @@ body {
   max-width: 1200px;
 }
 
-/* =====================
-   HEADINGS
-===================== */
+
 h2, h3, h4 {
   margin-bottom: 20px;
   padding-left: 20px;
@@ -113,9 +105,7 @@ h4 {
   border-left: 3px solid #ff7700;
 }
 
-/* =====================
-   SECTIONS
-===================== */
+
 main section {
   margin-bottom: 70px;
   background-color: #ffffff;
@@ -138,9 +128,7 @@ main section::after {
   transform: rotate(-20deg);
 }
 
-/* =====================
-   INFO BOXES
-===================== */
+
 .info-box {
   background: linear-gradient(145deg, #f0f4f8, #e0ebf9);
   padding: 35px;
@@ -164,9 +152,7 @@ main section::after {
   transform: translateY(-3px);
 }
 
-/* =====================
-   FLEX LAYOUT
-===================== */
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -186,9 +172,7 @@ main section::after {
   flex: 1;
 }
 
-/* =====================
-   LISTS
-===================== */
+
 .info-box ul {
   padding-left: 24px;
 }
@@ -205,9 +189,7 @@ main section::after {
   color: #ffcc00;
 }
 
-/* =====================
-   FEATURED AIRCRAFT
-===================== */
+
 .featured-aircraft {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -251,9 +233,7 @@ main section::after {
   color: #eef3f9;
 }
 
-/* =====================
-   FOOTER
-===================== */
+
 footer {
   margin-top: auto;
   padding-top: 35px;
@@ -263,9 +243,7 @@ footer {
   text-align: center;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 @media (max-width: 900px) {
   .content {
     padding: 40px;
