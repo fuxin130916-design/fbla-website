@@ -100,7 +100,7 @@ h3 {
   border-left: 4px solid #ff9900;
 }
 h3::before {
-  content: '🛩️';
+  content: '✈';
   margin-right: 6px;
 }
 
