@@ -1,6 +1,8 @@
+/* =====================
+   GLOBAL
+===================== */
 * {
   box-sizing: border-box;
-  transition: all 0.3s ease;
 }
 
 body {
@@ -13,14 +15,15 @@ body {
   min-height: 100vh;
 }
 
+/* =====================
+   SIDEBAR
+===================== */
 .sidebar {
   width: 250px;
   background: linear-gradient(180deg, #0b2c4d, #1a4b7a);
   color: white;
   padding: 40px 25px;
   box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
-  position: relative;
-  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .sidebar h2 {
@@ -36,12 +39,12 @@ body {
   color: white;
   text-decoration: none;
   margin-bottom: 18px;
-  font-size: 1em;
+  font-size: 0.95em;
   padding: 8px 6px;
   border-radius: 6px;
-  position: relative;
   text-transform: uppercase;
   font-weight: 500;
+  position: relative;
 }
 
 .sidebar a::before {
@@ -67,6 +70,9 @@ body {
   padding-left: 12px;
 }
 
+/* =====================
+   CONTENT
+===================== */
 .content {
   flex: 1;
   display: flex;
@@ -75,11 +81,13 @@ body {
   max-width: 1200px;
 }
 
+/* =====================
+   HEADINGS
+===================== */
 h2, h3, h4 {
   margin-bottom: 20px;
   padding-left: 20px;
   position: relative;
-  z-index: 1;
   color: #0b2c4d;
 }
 
@@ -88,41 +96,36 @@ h2 {
   font-size: 1.8em;
   border-left: 6px solid #ffcc00;
 }
+
 h2::before {
   content: '✈';
-  margin-right: 6px;
+  margin-right: 8px;
   color: #ffcc00;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   border-left: 4px solid #ff9900;
 }
-h3::before {
-  content: '✈';
-  margin-right: 6px;
-}
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   border-left: 3px solid #ff7700;
 }
 
+/* =====================
+   SECTIONS
+===================== */
 main section {
   margin-bottom: 70px;
   background-color: #ffffff;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
   background-image: url('https://www.transparenttextures.com/patterns/clouds.png');
   background-size: cover;
   background-repeat: no-repeat;
-  flex-shrink: 0;
-  width: 100%;
+  position: relative;
 }
 
 main section::after {
@@ -133,27 +136,19 @@ main section::after {
   font-size: 3em;
   color: rgba(255, 204, 0, 0.15);
   transform: rotate(-20deg);
-  z-index: 0;
 }
 
+/* =====================
+   INFO BOXES
+===================== */
 .info-box {
   background: linear-gradient(145deg, #f0f4f8, #e0ebf9);
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
   border-left: 6px solid #ffcc00;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-shrink: 0;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.info-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 .info-box::after {
@@ -163,20 +158,24 @@ main section::after {
   right: -20px;
   font-size: 4em;
   color: rgba(255, 204, 0, 0.08);
-  z-index: 0;
 }
 
-/* Flex container for image + text */
+.info-box:hover {
+  transform: translateY(-3px);
+}
+
+/* =====================
+   FLEX LAYOUT
+===================== */
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   align-items: flex-start;
 }
 
 .flex-row img {
-  flex: 1 1 300px;
-  max-width: 400px;
+  max-width: 360px;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -184,10 +183,12 @@ main section::after {
 }
 
 .flex-row div {
-  flex: 2 1 300px;
+  flex: 1;
 }
 
-/* Info-box lists */
+/* =====================
+   LISTS
+===================== */
 .info-box ul {
   padding-left: 24px;
 }
@@ -204,38 +205,55 @@ main section::after {
   color: #ffcc00;
 }
 
-.map-image {
+/* =====================
+   FEATURED AIRCRAFT
+===================== */
+.featured-aircraft {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.aircraft-card {
+  background: linear-gradient(145deg, #0b2c4d, #163f68);
+  color: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  border-top: 6px solid #ffcc00;
+  text-align: center;
+}
+
+.aircraft-card img {
   width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin: 25px 0;
+  height: 220px;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.map-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+.aircraft-card h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  color: #ffcc00;
 }
 
-.image {
-  width: 50%;
-  max-width: 200px;
-  height: auto;
-  display: block;
-  margin: 25px 0;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.aircraft-date {
+  font-size: 0.9em;
+  color: #c9d9ea;
+  margin-bottom: 12px;
 }
 
-.image:hover {
-  transform: scale(.50);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+.aircraft-card p {
+  line-height: 1.7;
+  color: #eef3f9;
 }
 
+/* =====================
+   FOOTER
+===================== */
 footer {
   margin-top: auto;
   padding-top: 35px;
@@ -245,13 +263,20 @@ footer {
   text-align: center;
 }
 
+/* =====================
+   RESPONSIVE
+===================== */
 @media (max-width: 900px) {
-  main section::after, .info-box::after {
-    font-size: 2.5em;
-    top: -15px;
-    right: -15px;
+  .content {
+    padding: 40px;
   }
+
   .flex-row {
     flex-direction: column;
+  }
+
+  main section::after,
+  .info-box::after {
+    font-size: 2.2em;
   }
 }
