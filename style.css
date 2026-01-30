@@ -199,7 +199,7 @@ main section::after {
 }
 
 .info-box li::before {
-  content: '🛩️';
+  content: '✈';
   margin-right: 8px;
   color: #ffcc00;
 }
